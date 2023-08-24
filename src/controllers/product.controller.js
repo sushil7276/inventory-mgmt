@@ -10,4 +10,8 @@ export default class ProductController {
 
     res.render("products", { products: products });
   }
+
+  getAddForm(req, res) {
+    return res.render("new-product");
+  }
 }
